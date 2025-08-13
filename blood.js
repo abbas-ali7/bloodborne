@@ -6,13 +6,13 @@
    Configuration & resources
    --------------------------- */
 const imageFiles = [
-  'images/5gxpwn5vf5sa1.jpg',
-  'images/bloobornesnow.jpg',
-  'images/bloodbornel.jpg',
-  'images/bloodskeleton.jpg',
-  'images/bloodborne.webp',
-  'images/Yharnamgothic.webp',
-  'images/riverbloodborne.jpg'
+  '5gxpwn5vf5sa1.jpg',
+  'bloobornesnow.jpg',
+  'bloodbornel.jpg',
+  '/bloodskeleton.jpg',
+  '/bloodborne.webp',
+  '/Yharnamgothic.webp',
+  '/riverbloodborne.jpg'
 ];
 
 const loreQuotes = [
@@ -555,4 +555,5 @@ function start(){
 
 /* export nothing needed - script attaches UI handlers already */
 // No exports needed, everything is handled internally
+
 // This script is self-contained and runs on page load                      
