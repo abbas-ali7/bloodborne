@@ -9,10 +9,10 @@ const imageFiles = [
   '5gxpwn5vf5sa1.jpg',
   'bloobornesnow.jpg',
   'bloodbornel.jpg',
-  '/bloodskeleton.jpg',
-  '/bloodborne.webp',
-  '/Yharnamgothic.webp',
-  '/riverbloodborne.jpg'
+  'bloodskeleton.jpg',
+  'bloodborne.webp',
+  'Yharnamgothic.webp',
+  'riverbloodborne.jpg'
 ];
 
 const loreQuotes = [
@@ -557,3 +557,4 @@ function start(){
 // No exports needed, everything is handled internally
 
 // This script is self-contained and runs on page load                      
+
