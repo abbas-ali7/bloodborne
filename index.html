@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bloodborne Ambient Particles</title>
+  <link rel="stylesheet" href="bloodborne.css">
+</head>
+<body>
+  <div id="ui">
+    <div class="left-controls">
+      <select id="weatherSelect">
+        <option value="ambient">Ambient (default)</option>
+        <option value="snow">Snow</option>
+        <option value="ash">Ash</option>
+        <option value="rain">Rain</option>
+        <option value="sparks">Sparks</option>
+        <option value="fog">Fog</option>
+      </select>
+
+      <button id="toggleBtn">Pause</button>
+      <button id="changeBgBtn">Next Background</button>
+      <button id="resetBtn">Reset Particles</button>
+    </div>
+
+    <div class="right-controls">
+      <label class="audio-label">Audio (file): <input id="audioFile" type="file" accept="audio/*"></label>
+      <label class="mic-label"><input id="useMic" type="checkbox"> Use Microphone</label>
+      <label class="density">Density: <input type="range" id="density" min="0" max="2" step="0.1" value="1"></label>
+    </div>
+  </div>
+
+  <canvas id="c"></canvas>
+
+  <!-- Lore popup -->
+  <div id="lore" class="hidden">
+    <div id="loreContent"></div>
+    <button id="closeLore">Close</button>
+  </div>
+
+  <script src="blood.js" defer></script>
+</body>
+</html>

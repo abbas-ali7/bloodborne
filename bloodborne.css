@@ -1,0 +1,45 @@
+/* bloodborne.cc - CSS for the ambient particle demo */
+* { box-sizing: border-box; }
+html,body { height:100%; margin:0; background:#050507; color:#ddd; font-family: "Segoe UI", Roboto, Arial; }
+#c { display:block; width:100vw; height:100vh; background:#000; }
+
+/* UI */
+#ui {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  z-index: 40;
+  pointer-events: none; /* allow clicks to pass through except controls */
+}
+#ui > div { pointer-events: auto; background: rgba(0,0,0,0.35); padding:8px 10px; border-radius:8px; backdrop-filter: blur(4px); }
+select, button, input[type="range"], label { margin-right:8px; color:#eee; background: rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.06); padding:6px 8px; border-radius:6px; }
+button { cursor:pointer; }
+.audio-label input, .mic-label input { margin-left:6px; vertical-align:middle; }
+
+/* Lore popup */
+#lore {
+  position: fixed;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  background: rgba(10,10,12,0.95);
+  border-radius:12px;
+  padding:18px;
+  max-width: 520px;
+  z-index: 100;
+  color:#f3efe6;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+}
+#lore.hidden { display:none; }
+#loreContent { margin-bottom:12px; font-size:15px; line-height:1.4; }
+#closeLore { background:#2b2b2b; border:1px solid rgba(255,255,255,0.05); color:#fff; padding:8px 12px; border-radius:8px; }
+
+/* simple responsive */
+@media (max-width:700px){
+  #ui { flex-direction:column; align-items:flex-start; gap:8px; left:8px; right:8px; }
+  #lore { width:90%; }
+}
